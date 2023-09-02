@@ -50,29 +50,39 @@
             </div>
         </section>
 
-        <section>
+        <section class="container-code">
             <div class="box-code">
                 <div class="code">
                     <div class="box">
                         <img src="Img/mac_buttons@2x.png" alt="">
                         <form action="">
                             <label for="coding"></label>
-                            <textarea name="area-coding" id="coding" cols="30" rows="10"></textarea>
+                            <textarea name="area-coding" id="coding" cols="85" rows="15">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                
+                                const unfold = (f, seed) => {
+                                    const go = (f, seed, acc) => {
+                                    const res = f(seed)
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                    }
+                                return go(f, seed, [])
+                                }</textarea>
                         </form>
                     </div>
                 </div>
-                <button>
-                    Visualizar com highlight
-                </button>
             </div>
+            <button class="btn-container-code">
+                Visualizar com highlight
+            </button>
         </section>
 
-        <section>
+        <section class="container-person">
             <div class="box-form">
                 <p>Seu projeto</p>
                 <label for="name"></label>
                 <input type="text" id="name" placeholder="Nome do seu projeto">
-                <textarea name="description" id="area-description" cols="30" rows="10"></textarea>
+
             </div>
 
             <div class="box-person">
