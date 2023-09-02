@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AluraCode</title>
+
+    <!-- import css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- import icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <!-- navegação -->
+
     <header class="header">
         <div class="logo">
             <img src="Img/Logo.png" alt="Logo">
@@ -23,6 +32,67 @@
             <img src="Img/Photo.png" alt="Imagem ilustrativa do usuário">
         </div>
     </header>
+
+    <!-- container principal -->
+
+    <main class="main">
+
+        <section class="container-menu">
+            <div class="box-menu">
+                <div class="menu">
+                    <p>Menu</p>
+                    <ul>
+                        <li><a href="#"><i class='bx bx-code-alt' id="container-menu-active"></i>Editor de código</a>
+                        </li>
+                        <li><a href="#"><i class='bx bxs-group'></i>Comunidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="box-code">
+                <div class="code">
+                    <div class="box">
+                        <img src="Img/mac_buttons@2x.png" alt="">
+                        <form action="">
+                            <label for="coding"></label>
+                            <textarea name="area-coding" id="coding" cols="30" rows="10"></textarea>
+                        </form>
+                    </div>
+                </div>
+                <button>
+                    Visualizar com highlight
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="box-form">
+                <p>Seu projeto</p>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Nome do seu projeto">
+                <textarea name="description" id="area-description" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="box-person">
+                <select name="select-linguagem" id="linguagem">
+                    <option value="js">JavaScript</option>
+                    <option value="html">Html</option>
+                    <option value="Css">Css</option>
+                </select>
+                <div class="box-color">
+                    <div class="color">
+
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                Salvar projeto
+            </button>
+        </section>
+    </main>
 
 
     <script src="script.js"></script>
