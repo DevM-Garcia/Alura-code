@@ -49,7 +49,7 @@ body {
 
 .busca-input {
     position: relative;
-    right: 4rem;
+    right: 5.4rem;
     background: rgba(255, 255, 255, 0.16);
     border-radius: 0.5rem;
     padding: 1.2rem 0.5rem;
@@ -60,6 +60,11 @@ body {
     line-height: 1.5rem;
     opacity: 0.64;
     color: var(--branco);
+    transition: all .4s ease;
+}
+
+.busca-input:hover {
+    background: rgba(255, 255, 255, 0.1)
 }
 
 /* main */
@@ -102,6 +107,10 @@ body {
     color: var(--branco);
 }
 
+.box-menu ul li i:hover {
+    background: #5081FB;
+}
+
 .box-menu ul li i {
     margin-right: 1rem;
     background: rgba(80, 129, 251, 0.16);
@@ -109,6 +118,7 @@ body {
     border-radius: 0.5rem;
     color: var(--branco);
     font-size: 1.2rem;
+    transition: all .4s ease;
 }
 
 #container-menu-active {
@@ -172,13 +182,86 @@ body {
     background: rgba(80, 128, 251, 0.1);
 }
 
-
-
-
-
 /* container-person */
 
 .container-person {
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 1.5rem;
+    font-family: var(--font-principal);
+}
+
+.box-form p {
+    color: var(--branco);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.box-form ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.box-form ul #name {
+    margin: 0.5rem 0;
+    padding: 1rem 0.875rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.box-form ul input {
+    margin: 0.5rem 0;
+    padding: 2rem 0.875rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.box-person p {
+    color: var(--branco);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.box-person select {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.16);
+    padding: 1rem 3.875rem;
+    color: var(--branco);
+    opacity: 0.69;
+    cursor: pointer;
+}
+
+.box-person .select-color {
+    padding: 1rem 4.875rem;
+}
+
+.box-person select option {
+    background: var(--background);
+    cursor: pointer;
+}
+
+.btn-container-person {
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #5081FB;
+    cursor: pointer;
+}
+
+.btn-container-person:hover {
+    background: #5080fbdc;
+    transition: all .4s ease;
+    color: #141414;
 }

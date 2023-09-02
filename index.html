@@ -80,25 +80,30 @@
         <section class="container-person">
             <div class="box-form">
                 <p>Seu projeto</p>
-                <label for="name"></label>
-                <input type="text" id="name" placeholder="Nome do seu projeto">
-
+                <ul>
+                    <input type="text" id="name" placeholder="Nome do seu projeto">
+                    <input type="text" placeholder="descrição do seu projeto">
+                </ul>
             </div>
-
             <div class="box-person">
-                <select name="select-linguagem" id="linguagem">
-                    <option value="js">JavaScript</option>
+                <p>Personalização</p>
+                <select name="select-linguagem" id="select-linguagem" class="select-linguagem">
+                    <option value="javascript">JavaScript</option>
                     <option value="html">Html</option>
-                    <option value="Css">Css</option>
+                    <option value="css">css3</option>
                 </select>
-                <div class="box-color">
-                    <div class="color">
-
-                    </div>
+                <div class="color">
+                    <label for="select-color" class="label-color" id="label-color"></label>
+                    <select name="select-color" id="select-color" onchange="mudaCor()" class="select-color">
+                        <option value="#0000FF">Blue</option>
+                        <option value="#66ff00">Green</option>
+                        <option value="#ff69b4">Pink</option>
+                        <option value="#ff2323">Red</option>
+                    </select>
                 </div>
             </div>
 
-            <button>
+            <button class="btn-container-person">
                 Salvar projeto
             </button>
         </section>
