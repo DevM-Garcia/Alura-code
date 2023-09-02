@@ -67,6 +67,17 @@ body {
     background: rgba(255, 255, 255, 0.1)
 }
 
+/* icons */
+.icons {
+    display: none;
+}
+
+.icons i {
+    color: var(--branco);
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
 /* main */
 
 .main {
@@ -264,4 +275,45 @@ body {
     background: #5080fbdc;
     transition: all .4s ease;
     color: #141414;
+}
+
+/* responsividade */
+
+@media screen and (max-width:1235px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .busca-input,
+    .img-person {
+        display: none;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .container-code {
+        order: 0;
+        width: 100%;
+    }
+
+    .container-menu {
+        display: none;
+    }
+
+    .container-person,
+    .box-person select {
+        order: 1;
+        margin: 1.5rem 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1073px) {
+    .icons {
+        display: flex;
+    }
 }
