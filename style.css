@@ -170,9 +170,12 @@ nav .busca input {
 
 .menu ul li {
     margin: 1.5rem 0;
-    color: var(--branco);
     cursor: pointer;
     width: 100%;
+}
+
+.menu ul li a {
+    color: var(--branco);
 }
 
 .menu ul i {

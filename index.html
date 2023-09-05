@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>AluraCode</title>
+    <!-- import css highlight -->
+    <link rel="stylesheet" href="dark.css">
 
     <!-- import css -->
     <link rel="stylesheet" href="style.css">
@@ -42,7 +44,11 @@
         <section class="code">
             <div class="code_editor">
                 <div class="code-editor">
-                    <img src="Img/mac_buttons@2x.png" alt="">
+                    <img src="Img/mac_buttons@2x.png" alt="imagem figurativa do linux">
+                    <div class="codigo-wrapper">
+                        <code class="preview hljs" contenteditable="true"
+                            aria-label="Editor de código">Function teste (){}</code>
+                    </div>
                 </div>
             </div>
             <button class="btn-highligth">
@@ -54,8 +60,8 @@
             <div class="menu">
                 <p>Menu</p>
                 <ul class="lista-menu">
-                    <li><a href="#"></a> <i id="active" class='bx bx-code'></i>Editor de código</li>
-                    <li><a href="#"></a> <i class='bx bxs-group'></i>Comunidade</li>
+                    <li><a href="#"><i id="active" class='bx bx-code'></i>Editor de código</a></li>
+                    <li><a href="/comunidade.html"><i class='bx bxs-group'></i>Comunidade</a></li>
                 </ul>
             </div>
         </section>
@@ -93,7 +99,7 @@
     </main>
 
     <!-- container principal -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="script.js"></script>
 </body>
 
