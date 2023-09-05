@@ -19,67 +19,45 @@
     <!-- navegação -->
 
     <header class="header">
-        <div class="logo">
-            <img src="Img/Logo.png" alt="Logo">
-        </div>
+        <nav>
+            <div class="logo">
+                <img src="Img/Logo.png" alt="Logo">
+            </div>
+            <div class="busca">
+                <label for="campo-busca"></label>
+                <input type="text" class="busca-input" id="campo-busca" placeholder="Busque por algo">
+            </div>
+            <div class="img-person">
+                <img src="Img/Photo.png" alt="Imagem ilustrativa do usuário">
+            </div>
+            <div class="icons">
+                <i class='bx bx-search search'></i>
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
 
-        <div class="busca">
-            <label for="campo-busca"></label>
-            <input type="text" class="busca-input" id="campo-busca" placeholder="Busque por algo">
-        </div>
-
-        <div class="img-person">
-            <img src="Img/Photo.png" alt="Imagem ilustrativa do usuário">
-        </div>
-
-        <div class="icons">
-            <i class='bx bx-menu'></i>
-            <i class='bx bx-search'></i>
-        </div>
     </header>
 
-    <!-- container principal -->
-
-    <main class="main">
-
-        <section class="container-menu">
-            <div class="box-menu">
-                <div class="menu">
-                    <p>Menu</p>
-                    <ul>
-                        <li><a href="#"><i class='bx bx-code-alt' id="container-menu-active"></i>Editor de código</a>
-                        </li>
-                        <li><a href="#"><i class='bx bxs-group'></i>Comunidade</a></li>
-                    </ul>
+    <main>
+        <section class="code">
+            <div class="code_editor">
+                <div class="code-editor">
+                    <img src="Img/mac_buttons@2x.png" alt="">
                 </div>
             </div>
+            <button class="btn-highligth">
+                Visualizar com o highlight
+            </button>
         </section>
 
-        <section class="container-code">
-            <div class="box-code">
-                <div class="code">
-                    <div class="box">
-                        <img src="Img/mac_buttons@2x.png" alt="">
-                        <form action="">
-                            <label for="coding"></label>
-                            <textarea name="area-coding" id="coding" cols="85" rows="15">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                                
-                                const unfold = (f, seed) => {
-                                    const go = (f, seed, acc) => {
-                                    const res = f(seed)
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                                    }
-                                return go(f, seed, [])
-                                }</textarea>
-                        </form>
-                    </div>
-                </div>
+        <section class="menu">
+            <div class="menu">
+                <p>Menu</p>
+                <ul class="lista-menu">
+                    <li><a href="#"></a> <i id="active" class='bx bx-code'></i>Editor de código</li>
+                    <li><a href="#"></a> <i class='bx bxs-group'></i>Comunidade</li>
+                </ul>
             </div>
-            <button class="btn-container-code">
-                Visualizar com highlight
-            </button>
         </section>
 
         <section class="container-person">
@@ -87,7 +65,7 @@
                 <p>Seu projeto</p>
                 <ul>
                     <input type="text" id="name" placeholder="Nome do seu projeto">
-                    <input type="text" placeholder="descrição do seu projeto">
+                    <input type="text" id="description" placeholder="descrição do seu projeto">
                 </ul>
             </div>
             <div class="box-person">
@@ -114,6 +92,7 @@
         </section>
     </main>
 
+    <!-- container principal -->
 
     <script src="script.js"></script>
 </body>
