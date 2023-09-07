@@ -195,7 +195,6 @@ nav .busca input {
 
 .container-person {
     padding: 1em;
-
     display: flex;
     flex-direction: column;
     margin: 1.5rem 0;
@@ -211,13 +210,13 @@ nav .busca input {
     color: var(--branco);
 }
 
-.box-form ul {
+.box-form form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.box-form ul input {
+.box-form form input {
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -244,7 +243,7 @@ nav .busca input {
     background: var(--background);
 }
 
-.btn-container-person {
+#safe-project {
     border-radius: 0.5rem;
     background: #5081FB;
     display: flex;
@@ -366,7 +365,7 @@ nav .busca input {
         display: block;
     }
 
-    .btn-container-person {
+    #safe-project {
         width: 82vw;
     }
 

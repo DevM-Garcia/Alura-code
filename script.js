@@ -1,4 +1,4 @@
-// função que altera a cor do quadro que vai o código
+// função que altera a cor do quadro do código
 
 function mudaCor() {
     let select = document.querySelector('#select-color');
@@ -33,3 +33,17 @@ function aplicaHighlight() {
 botao.addEventListener('click', () => {
     aplicaHighlight()
 });
+
+// formulario 
+
+
+
+const form = document.getElementById("novoItem");
+
+form.addEventListener('submit', (evento) => {
+    evento.preventDefault()
+    console.log(evento)
+    console.log(evento.target.elements['name'].value)
+    console.log(evento.target.elements['description'].value)
+})
+
